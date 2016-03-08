@@ -1,3 +1,4 @@
+/* 01 - general */
 .clearfix {
 	clear: both;
 }
@@ -14,7 +15,9 @@ a:hover, a:focus {
     -moz-transition: all .3s;
     transition: all .3s
 }
-
+img {
+    width: 100%;
+}
 #bodyContent th, #bodyContent td {
     border: 1px solid #aaa;
 }
@@ -170,7 +173,7 @@ a:hover, a:focus {
 	position: relative;
 	top: 1px;
 }
-/*list*/
+/* 03 posts list*/
 .well {
     background-color: #fff;
     border: 1px solid #E3E3E3;
@@ -247,7 +250,7 @@ a:hover, a:focus {
 	background-color: #eee;  
 }
 
-/*文章页*/
+/*04 文章页和页面*/
 .single-title {
     margin: 0 -25px 15px -30px;
     background-color: #fafafa;
@@ -385,7 +388,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .submit {
     float: right;
 }
-/*分类*/
+/*05 分类*/
 .archive-header {
     padding: 10px 20px;
     margin-bottom: 20px;
@@ -394,7 +397,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     border-radius: 2px;
 	font-size: 16px;
 }
-/*sidebar*/
+/*06 sidebar*/
 .widget-title {
     font-size: 16px;
     font-weight: bold;
@@ -451,7 +454,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .widget ul li:last-child {
     border-bottom: none;
 }
-
+/* 07 页脚 */
 #footer-no-top {
     line-height: 50px;
     background-color: #293545;
