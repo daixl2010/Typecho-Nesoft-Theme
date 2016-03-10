@@ -15,9 +15,7 @@ a:hover, a:focus {
     -moz-transition: all .3s;
     transition: all .3s
 }
-img {
-    width: 100%;
-}
+
 #bodyContent th, #bodyContent td {
     border: 1px solid #aaa;
 }
@@ -274,7 +272,9 @@ h6.copyright {
 .post-near li {
     margin-top: 5px;
 }
-
+.single-content img {
+	width: 100%;
+}
 /*页面页*/
 .page-header {
     padding-bottom: 9px;
