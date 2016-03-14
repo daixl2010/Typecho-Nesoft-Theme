@@ -22,13 +22,16 @@
 
 * V1.0.1 解决评论头像显示错误；
 
+==============================
+
 #### 问题反馈
 
-在[这里](https://github.com/daixl2010/Typecho-Nesoft-Theme/issues)提出使用中的问题，我会在时间允许的第一时间进行处理。
+在[这里](http://www.nesoft.cn/message)提出使用中的问题，我会在时间允许的第一时间进行处理。
 
 另外，欢迎fork & star。
+
+==============================
 
 #### LICENSE
 
 [GPL LICENSE](https://github.com/daixl2010/Typecho-Nesoft-Theme/blob/master/LICENSE)
-
