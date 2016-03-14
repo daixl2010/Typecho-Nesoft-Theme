@@ -12,7 +12,7 @@
 
 #### 如何使用
 
-点击右侧的`Download ZIP`按钮，下载完成之后解压得到类似'Nesoft-master'文件夹，将文件夹重命名为'Nesoft',上传到Typecho目录'usr/themes',然后在后台启用主题。
+点击右侧的`Download ZIP`按钮，下载完成之后解压得到类似'Nesoft-master'文件夹，将文件夹重命名为'Nesoft'，上传到Typecho目录'usr/themes'，然后在后台启用主题。
 
 ==============================
 
