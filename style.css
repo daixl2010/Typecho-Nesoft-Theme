@@ -1,4 +1,3 @@
-/* 01 - general */
 .clearfix {
 	clear: both;
 }
@@ -16,9 +15,6 @@ a:hover, a:focus {
     transition: all .3s
 }
 
-#bodyContent th, #bodyContent td {
-    border: 1px solid #aaa;
-}
 /* 02 - Header & Navigation */
 #header {
 	background: #5eaad1;
@@ -171,7 +167,7 @@ a:hover, a:focus {
 	position: relative;
 	top: 1px;
 }
-/* 03 posts list*/
+/*list*/
 .well {
     background-color: #fff;
     border: 1px solid #E3E3E3;
@@ -248,7 +244,7 @@ a:hover, a:focus {
 	background-color: #eee;  
 }
 
-/*04 文章页和页面*/
+/*文章页*/
 .single-title {
     margin: 0 -25px 15px -30px;
     background-color: #fafafa;
@@ -289,9 +285,43 @@ h6.copyright {
 .ad {
     margin-bottom: 15px;
     overflow: hidden;
+background-color: #fff;
+border-radius: 4px;
+padding: 10px 5px;
 }
 .ad img {
 	width: 100%;
+}
+.widget_ui_textasb {
+    border: none;
+    border-radius: 0;
+}
+.widget_ui_textasb a {
+    display: block;
+    padding: 0 25px 20px;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    font-size: 12px;
+}
+.widget_ui_textasb a strong {
+    margin: -1px 0 0 0;
+    display: inline-block;
+    padding: 4px 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #428BCA;
+}
+.widget_ui_textasb a h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0;
+    padding: 0;
+}
+.widget_ui_textasb a p {
+    color: #999;
+    line-height: 2em;
+    margin-bottom: 0;
 }
 /*评论*/
 .comment-body {
@@ -388,7 +418,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .submit {
     float: right;
 }
-/*05 分类*/
+/*分类*/
 .archive-header {
     padding: 10px 20px;
     margin-bottom: 20px;
@@ -397,7 +427,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     border-radius: 2px;
 	font-size: 16px;
 }
-/*06 sidebar*/
+/*sidebar*/
 .widget-title {
     font-size: 16px;
     font-weight: bold;
@@ -454,16 +484,29 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .widget ul li:last-child {
     border-bottom: none;
 }
-/* 07 页脚 */
+
 #footer-no-top {
-    line-height: 50px;
+	padding:15px;
     background-color: #293545;
 }
-.copyrights, .copyrights a {
+.copyrights {
     color: #BDC3C7;
+	float: left;
+	margin: 5px 0;
 }
-.copyrights a:hover {
+.copyrights a {
+	color: #BDC3C7;
+}
+.copyrights a:hover, .social a:hover {
 	color: #fafafa;
+}
+.social {
+	color: #BDC3C7;
+    float: right;
+	margin: 5px 0;
+}
+.social a{
+	color: #BDC3C7;
 }
 .go-up {
 	position: fixed;
@@ -516,5 +559,9 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 		margin-right: 10px;
 		margin-left: auto;
 		display: block;
+	}
+	.social, .copyrights, .social a, .copyrights a {
+		text-align:center;
+		float:none;
 	}
 }
