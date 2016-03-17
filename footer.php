@@ -1,9 +1,10 @@
 <div class="clearfix"></div>
 	<footer id="footer-no-top">
 		<div class="container">
-			<div class="copyrights pull-left">
+			<div class="copyrights">
 				Copyright &copy; 2016 <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>  All rights reserved.
-			<div class="social pull-right">				
+			</div>
+			<div class="social">				
 				<?php if($this->options->global_beian) : ?>
 					<a href="http://www.miibeian.gov.cn" rel="nofollow"><?php echo $this->options->global_beian; ?></a>
 				<?php endif; ?>
