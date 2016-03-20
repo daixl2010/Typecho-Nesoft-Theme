@@ -4,6 +4,10 @@ function themeConfig($form) {
 	$global_notice = new Typecho_Widget_Helper_Form_Element_Text('global_notice', NULL, _t(''), _t('站点公告'), _t('在这里填入公告，不显示则留空'));
     $form->addInput($global_notice);
 	
+	$thumbDisplay = new Typecho_Widget_Helper_Form_Element_Radio('thumbDisplay', 
+    array('yes' => _t('启用'), 'no' => _t('禁用')), 'display', _t('略缩图显示'),_t('不兼容timthumb的用户请禁用此功能；禁用后可删除Thumbnail插件'));
+    $form->addInput($thumbDisplay);
+	
     $global_beian = new Typecho_Widget_Helper_Form_Element_Text('global_beian', NULL, _t(''), _t('备案号'), _t('在这里填入天朝备案号，不显示则留空'));
     $form->addInput($global_beian);
 	
