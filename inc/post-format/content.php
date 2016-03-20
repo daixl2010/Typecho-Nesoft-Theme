@@ -13,11 +13,15 @@
 			</div>
 		</header>
 		<div class="post-content">
-			<div class="thumb hidden-xs hidden-sm pull-left">
-				<a href="<?php $this->permalink() ?>" class="thumbnail">
-                <img src="<?php $this->options->themeUrl('img/random/'); ?><?php echo rand(1,10); ?>.jpg" style="width: 200px;height: 150px;" title="<?php $this->title() ?>" alt="<?php $this->title() ?>"></a>
-            </div>
-			<?php $this->excerpt(180, '...'); ?>
+			<?php if ($this->options->thumbDisplay == 'yes') { ?>
+				<div class="thumb hidden-xs hidden-sm pull-left">
+					<a href="<?php $this->permalink() ?>" title="<?php $this->title() ?>"><img class="thumbnail" src="<?php $this->options->themeUrl(); ?>timthumb.php?src=<?php Thumbnail_Plugin::show($this); ?>&h=150&w=200&zc=1" /></a>
+				</div>
+				<?php $this->excerpt(160, '...'); ?>
+			<?php } ?>
+			<?php if ($this->options->thumbDisplay == 'no') { ?>
+        			<span class="content nothumb"><?php $this->excerpt(300, '...'); ?></span>
+        		<?php } ?>
 		</div>
 		<div class="more-link"><a href="<?php $this->permalink() ?>" title="阅读全文">阅读全文&raquo;</a></div>
 	</div>
