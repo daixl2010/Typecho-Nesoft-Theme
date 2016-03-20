@@ -14,9 +14,16 @@
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 	<!-- 使用url函数转换相关路径 -->
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('inc/bootstrap/css/bootstrap.min.css'); ?>">
+   	<link rel="stylesheet" href="<?php $this->options->themeUrl('inc/bootstrap/css/bootstrap.min.css'); ?>">
 	<link rel="stylesheet" href="<?php $this->options->themeUrl('inc/font-awesome/css/font-awesome.min.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
+    	<link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    	<!--[if lt IE 9]>
+		<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 	
 	<?php if($this->options->seo_zdts) : ?>
 		<?php echo $this->options->seo_zdts; ?>
