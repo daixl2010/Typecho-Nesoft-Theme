@@ -5,11 +5,15 @@ function themeConfig($form) {
     $form->addInput($global_notice);
 	
 	$thumbDisplay = new Typecho_Widget_Helper_Form_Element_Radio('thumbDisplay', 
-    array('yes' => _t('启用'), 'no' => _t('禁用')), 'display', _t('略缩图显示'),_t('不兼容timthumb的用户请禁用此功能；禁用后可删除Thumbnail插件'));
+    array('yes' => _t('启用'), 'no' => _t('禁用')), 'display', _t('文章列表略缩图显示'),_t('不兼容timthumb的用户请禁用此功能；禁用后可删除Thumbnail插件'));
     $form->addInput($thumbDisplay);
 	
     $global_beian = new Typecho_Widget_Helper_Form_Element_Text('global_beian', NULL, _t(''), _t('备案号'), _t('在这里填入天朝备案号，不显示则留空'));
     $form->addInput($global_beian);
+	
+	$sidebar_posts = new Typecho_Widget_Helper_Form_Element_Radio('sidebar_posts', 
+    array('yes' => _t('启用'), 'no' => _t('禁用')), 'display', _t('侧边栏最新文章'),_t('侧边栏最新文章图文展示'));
+    $form->addInput($sidebar_posts);
 	
 	$seo_zdts = new Typecho_Widget_Helper_Form_Element_Textarea('seo_zdts', NULL, NULL, _t('百度推送代码'), _t('这里输入你的推送代码,不填则不显示。'));
     $form->addInput($seo_zdts);
