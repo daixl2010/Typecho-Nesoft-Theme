@@ -4,7 +4,7 @@
  * 
  * @package Nesoft Theme 
  * @author nesoft
- * @version 1.0.2
+ * @version 1.0.4
  * @link http://nesoft.cn
  *
  */
