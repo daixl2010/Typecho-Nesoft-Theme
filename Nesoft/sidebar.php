@@ -1,4 +1,4 @@
-<aside id="widget_ui_together" class="widget widget_ui_together panel clearfix">
+<aside id="widget_ui_post" class="widget widget_ui_post panel clearfix">
 	<div class="widget-title"><i class="fa"></i>最新文章</div>
 	<ul>			
 		<?php $this->widget('Widget_Contents_Post_Recent','pageSize=3')->to($posts); ?>
