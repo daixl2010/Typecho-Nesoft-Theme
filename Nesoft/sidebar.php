@@ -12,6 +12,14 @@
 			<?php endwhile; ?>		
 		</ul>
 	</aside>
+<?php elseif ($this->options->sidebar_posts == 'no') :?>
+	<section class="widget panel">
+		<h3 class="widget-title"><i class="fa"></i><?php _e('最新文章'); ?></h3>
+		<ul class="widget-list">
+			<?php $this->widget('Widget_Contents_Post_Recent','pageSize=8')
+			->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
+		</ul>
+	</section>
 <?php endif; ?>
 <?php $this->need('inc/ad/ad_widget_top.php'); ?>
 <section class="widget panel">

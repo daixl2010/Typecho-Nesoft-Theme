@@ -12,7 +12,7 @@ function themeConfig($form) {
     $form->addInput($global_beian);
 	
 	$sidebar_posts = new Typecho_Widget_Helper_Form_Element_Radio('sidebar_posts', 
-    array('yes' => _t('启用'), 'no' => _t('禁用')), 'display', _t('侧边栏最新文章'),_t('侧边栏最新文章图文展示'));
+    array('yes' => _t('图文'), 'no' => _t('标题')), 'display', _t('侧边栏最新文章'),_t('侧边栏最新文章图文展示或者标题展示'));
     $form->addInput($sidebar_posts);
 	
 	$seo_zdts = new Typecho_Widget_Helper_Form_Element_Textarea('seo_zdts', NULL, NULL, _t('百度推送代码'), _t('这里输入你的推送代码,不填则不显示。'));
