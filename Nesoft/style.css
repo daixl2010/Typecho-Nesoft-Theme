@@ -326,6 +326,42 @@ padding: 10px 5px;
     line-height: 2em;
     margin-bottom: 0;
 }
+/*最新文章图文*/
+.widget_ui_post a {
+    position: relative;
+    display: block;
+    color: rgb(255, 255, 255) !important;
+    overflow: hidden;
+    height: 130px;
+}
+.widget_ui_post img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 2px;
+}
+.widget_ui_post .text {
+    position: absolute;
+    bottom: 0;
+	left: 0;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    line-height: 18px;
+    font-size: 14px;
+}
+.wid-tg-comment {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 2px;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    padding: 3px 8px 4px 4px;
+    font-size: 12px;
+    opacity: .7;
+    display: block;
+    z-index: 9;
+    background: rgb(50, 165, 231);
+}
 /*评论*/
 .comment-body {
     padding: 10px 15px;
