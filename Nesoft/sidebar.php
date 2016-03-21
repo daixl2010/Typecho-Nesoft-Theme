@@ -12,7 +12,7 @@
 			<?php endwhile; ?>		
 		</ul>
 	</aside>
-<?php elseif ($this->options->sidebar_posts == 'no') :?>
+<?php else : ?>
 	<section class="widget panel">
 		<h3 class="widget-title"><i class="fa"></i><?php _e('最新文章'); ?></h3>
 		<ul class="widget-list">
