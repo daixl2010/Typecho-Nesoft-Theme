@@ -602,6 +602,9 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 		margin-left: auto;
 		display: block;
 	}
+	.col-md-8 {
+		padding: 10px;
+	}
 	.social, .copyrights, .social a, .copyrights a {
 		text-align:center;
 		float:none;
