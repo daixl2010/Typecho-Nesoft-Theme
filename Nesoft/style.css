@@ -1,14 +1,27 @@
+.tags a {
+    background-color: #eee;
+    border-radius: 2px;
+    padding: 2px 5px;
+    margin: 2px;
+}
 .clearfix {
 	clear: both;
 }
 body {
 	background-color: #EEE;
-    	color: #393939;
+    color: #393939;
 }
 body, textarea, input, select, button {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'Hiragino Sans GB', '微软雅黑', 'WenQuanYi Micro Hei', STHeiti, SimSun, sans-serif;
 }
-a:hover, a:focus {
+a, .links li a {
+    color: #555;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s
+}
+a:hover, a:focus, .entry-meta a:hover, a.more-link, a.entry-cover:before, .entry-content a, .page-content a, .links li a:hover, .pager a:hover {
+    color: #337AB7;
     text-decoration: none;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -197,7 +210,7 @@ a:hover, a:focus {
 .post-title a:hover {
     color: #337ab7;
 }
-.post-meta .time, .post-meta .author, .post-meta .categories {
+.post-meta .time, .post-meta .author, .post-meta .categories, .comments {
     margin-right: 15px;
 }
 .post-content {
@@ -272,10 +285,40 @@ h6.copyright {
     margin-top: 5px;
 }
 .single-content img {
-	width: 100%;
+	max-width: 100%;
+	margin-bottom: 15px;
 }
 .single-content {
     line-height: 2;
+}
+.caption {
+    color: #0C0C0B;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.related {
+    white-space: normal;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.related ul {
+    padding: 0;
+}
+.related li {
+    float: left;
+    width: 25%;
+    list-style: none;
+    padding: 5px;
+    text-align: left;
+    height: auto;
+    font-size: 13px;
+}
+.related a {
+    float: left;
+    width: 100%;
+    overflow: hidden;
 }
 /*页面页*/
 .page-header {
@@ -291,9 +334,9 @@ h6.copyright {
 .ad {
     margin-bottom: 15px;
     overflow: hidden;
-background-color: #fff;
-border-radius: 4px;
-padding: 10px 5px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 10px 5px;
 }
 .ad img {
 	width: 100%;

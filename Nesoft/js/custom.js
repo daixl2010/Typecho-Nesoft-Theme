@@ -16,28 +16,6 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 	
-/*  jQuery(".go-up").click(function() {
-        $body.animate({
-            scrollTop: 0
-        },
-        400)
-    });
-    jQuery(".go-btm").click(function() {
-        $body.animate({
-            scrollTop: $(document).height()
-        },
-        400)
-    });
-    jQuery(".go-comt").click(function() {
-        $body.animate({
-            scrollTop: $("#comments").offset().top
-        },
-        400)
-    }); */
-	
-/* Menu */
-	
-
 	
 	/* Header mobile */
 	
