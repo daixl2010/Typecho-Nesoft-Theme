@@ -3,7 +3,7 @@
  * 这是typecho系统的一套基于Bootstrap的响应式主题！你可以在<a href="http://nesoft.cn">Nesoft的官方网站</a>获得更多关于此皮肤的信息。
  * @package Nesoft Theme 
  * @author nesoft
- * @version 1.0.4
+ * @version 1.1.0
  * @link http://nesoft.cn
  *
  */
